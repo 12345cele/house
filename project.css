@@ -1,0 +1,384 @@
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+    font-family: "quicksand",sans-serif;
+}
+
+.navbar{
+    background: linear-gradient(30deg,rgb(63, 53, 53),rgb(170, 134, 134));
+    /* color: rgb((68), 68, 68); */
+    /* background-color: black; */
+    border-radius: 10px;
+    
+}
+.navbar ul{
+    overflow: auto;
+}
+.navbar li{
+    float:left;
+    list-style: none; 
+    margin: 13px 20px;
+    
+}
+.navbar li a{
+    padding: 3px 3px;
+    text-decoration: none;
+    color: white;
+}
+ @media(min-width:480px){
+  .navbar li a{
+    grid-template-columns: 1fr 1fr;
+  }
+} 
+
+.menu-btn{
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  display: none;
+}
+
+.menu-btn span{
+  width: 100%;
+  height: 3px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+}
+
+#side-drawer {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(29,26,27);
+  display: none;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+/* #side-drawer header{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 4rem 1rem;
+} */
+
+#side-drawer:target{
+  display: block;
+  z-index: 99;
+}
+
+
+#side-drawer header{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 4rem 1rem;
+}
+
+#side-drawer ul{
+  list-style: none;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem 1rem;
+
+}
+#side-drawer li{
+  margin: 1rem 0;
+}
+
+#side-drawer a{
+  color: rgb(255,239,213);
+  font-size: 2rem;
+  text-decoration: none;
+
+}
+
+#side-drawer:target{
+  display: block;
+  z-index: 99;
+}
+
+
+  
+
+.navbar li a:hover{
+    color: red
+}
+.search a:hover{
+    color: red;
+}
+ .search a{
+    text-decoration: none;
+    float: right;
+    color: white;
+    padding: 12px 75px; 
+} 
+.navbar input{
+    border: 2px solid black;
+    border-radius: 1px;
+    padding: 3px 17px;
+    width: 129px;
+} 
+
+
+    #cell{
+        background-image: url("goproperty-bg.webp"); /* The image used */
+        height: 550px; /* You must set a specified height */
+        background-position: center; /* Center the image */
+        background-repeat: no-repeat; /* Do not repeat the image */
+        background-size: cover; /* Resize the background image to cover the entire container */
+        position: relative;
+      }
+      #cell img{
+        width: 4rem;
+        height: 4rem;
+        position: absolute;
+        top:0px;
+        left: 30%;
+      }
+
+      .typewriter h1 {
+        overflow: hidden; /* Ensures the content is not revealed until the animation */
+        border-right: .02em solid rgb(146, 101, 18); /* The typwriter cursor */
+        white-space: nowrap; /* Keeps the content on a single line */
+        margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+        letter-spacing: .15em; /* Adjust as needed */
+        animation: 
+          typing 3.5s steps(60, end),
+          blink-caret .75s step-end infinite;
+      }
+      
+      /* The typing effect */
+      @keyframes typing {
+        from { width: 0 }
+        to { width: 100% }
+      }
+      
+      /* The typewriter cursor effect */
+      @keyframes blink-caret {
+        from, to { border-color:rgb(150, 150, 224) }
+        50% { border-color: rgb(190, 179, 157); }
+      }
+
+#hero-content{
+    width: 60%;
+    background-color:gray(77, 45, 45, 0.8);
+    border-radius: 8px;
+    text-align: center;
+    padding: 3.125rem 0;
+    margin: 0 auto;
+    position: relative;
+    top: 12.5rem;
+    box-shadow: 2px 4px 8px rgb(68, 67, 67);
+    }
+
+    #hero-content h1{
+        color: white;
+        text-transform: uppercase;
+        font-family:"Raleway",sans-serif;
+        font-size:2.125rem;
+        margin: 0;
+    }
+
+    #hero-content p{
+        color: white;
+        text-transform: uppercase;
+        font-size: 1.5rem;
+        font-weight: 100;
+        margin-bottom: 2rem;
+    }
+    
+    
+       h2{
+           text-align: center;
+           font-size:2.5rem;
+           color: rgb(59, 65, 64);
+       }
+   #hero-content a {
+       text-decoration: none;
+       background-color: rgb(228, 228, 161);
+       padding: 0.75rem 1.5rem;
+       border-radius: 8px;
+       font-size: 1.5rem;
+       color: black;
+       box-shadow: 2px 4px 8px rgb(68, 67, 67);
+       font-weight: bold;
+   }
+
+   
+   #hero-content a:hover{
+    background-color:rgb(131, 120, 120);
+}
+#highlights{
+    background: linear-gradient(0deg, rgb(227,255,253), rgb(202,243,240));
+    padding: 1.5rem;
+}
+#highlights p{
+    text-align: center;
+    opacity: 0.4;
+    padding: 0;
+    margin: 0;
+    padding: 1rem;
+
+}
+
+#highlights h2{
+  text-align: center;
+  font-size: 2.5rem;
+  color: rgb(59,65,64);
+  margin: 0;
+  margin-bottom: 2rem;
+}
+
+#destinations{
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  margin: 0 auto;
+  text-decoration: none;
+  
+}
+#destinations :hover{
+  color:rgb(106, 194, 223);
+}
+
+
+.destination img{
+  height: 12.5rem;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 2px 4px 8px rgb(211, 198, 198);
+  transition: transform.6s;
+  
+}
+
+.destination img:hover {
+  transition: scale(1.1);
+}
+.destination{
+  margin: 0 1.25rem;
+
+}
+
+.destination p{
+  text-align: center;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+
+}
+
+.destination img:hover{
+  background-color: rgb(86, 100, 96);
+}
+
+      .hero-text {
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: rgb(185, 79, 79);
+        }
+        
+        .hero-text p{
+         font-weight: 400;
+         color:rgb(92, 30, 30);
+         font-size: 20px;
+        }
+        button{
+            /* background-color: blue; */
+            border-radius: 5px;
+            width: 400px;
+            height: 20px;
+           
+        }
+        button:hover {
+            color: rgb(223, 9, 223);
+         }
+
+        /* About page */
+        
+   .item-content {
+    padding:24px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+  } 
+
+
+
+    #ce h3{
+      text-align: center;
+      font-weight: 400;
+      font-size: 2rem;
+      color: rgb(85, 46, 46);
+    } 
+
+    #chs{
+        display: flex;
+    justify-content: center;
+    }
+
+    #chs img{
+        width: 3rem;
+        height: 3rem;
+    }
+  
+
+    .container{
+      width: 80%;
+      margin: 0 auto;
+      
+      
+  }
+  
+  C:\Users\PC\Desktop\house project\index.html
+  footer {
+    background-color:gray;
+    padding: 2.46rem 0;
+    
+}
+footer ul{
+
+    display: flex;
+    justify-content: center;
+    
+}
+
+footer li{
+    width:1.5rem;
+    height:1.5rem;
+    margin: 0 .125rem;
+    list-style: none;
+}
+
+footer img{
+    width:90%;
+    height: 90%;
+    padding-bottom: 40px;
+} 
+
+
+.footer{
+    position:fixed;
+   left: 0;
+   bottom: 0;
+   right: 0;
+   width: -10%;
+   background-color:black;
+   color: white;
+   text-align:end;
+    font-size: 0.9rem;
+}
+
+   

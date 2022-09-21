@@ -1,0 +1,262 @@
+body{
+    margin: 0;
+    font-family: "quicksand",sans-serif;
+    background: linear-gradient(10deg,rgb(50, 13, 83),rgb(68,18,60));
+    color: rgb((68), 68, 68);
+}
+
+header{
+    position: static;
+}
+
+header a {
+    color: rgb(183, 230, 235);
+
+}
+
+h1:hover{
+    color: rgb(59, 59,59);
+    background-color: gray;
+}
+#page-logo img{
+    padding: 20px;
+    width: 6.5rem;
+    height: 6.5rem; 
+}
+
+@media(max-width:48rem){
+    #page-logo img a {
+        display: block;
+        grid-template-columns: auto;
+        /* grid-template-columns: 1fr;
+        gap: 0.75rem; */
+    }
+
+    
+ }
+
+/* header start here */
+
+
+ul{
+    list-style: none;
+     /* margin: 0;
+    padding: 0; */
+} 
+
+ 
+
+header ul{
+    display: flex;
+    justify-content:space-evenly;
+    padding: 6px;
+    margin: 5px;
+} 
+
+#page-logo a{
+    padding-left:200px;
+    font-family: "Oleo Script", cursive;
+    text-decoration: none;
+    font-size: 50px;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px black;
+} 
+
+ header li{
+margin-left: 1.25rem; 
+}
+
+header a{
+    text-decoration: none;
+    font-size: 1.25rem;
+    color: rgb(225,251,0);
+     padding: 0.75rem; 
+    border-radius: 6px; 
+} 
+
+header nav a:hover{
+    background-color: rgb(208, 216, 137);
+    color: rgb(77,77,77 );
+    padding: 0.75rem;
+}
+
+main ul{
+    width: 80%;
+    margin: 0 auto 2.25rem auto;
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    gap: 1.25rem;
+}
+h1:hover{
+    color: rgb(59, 59,59);
+    background-color: gray;
+} 
+
+
+header nav a:hover{
+    background-color: rgb(183, 230, 235);
+    color: rgb(red, green, blue);
+}  
+
+
+main ul{
+    width: 80%;
+    margin: 0 auto 2.25rem auto;
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    gap: 1rem;
+}
+
+main li{
+    display: flex;
+    border-radius: 6px;
+    box-shadow: 1px 1px 4px rgb(0,0,0,0.2);
+    overflow: hidden;
+    margin: 0.62rem 0;
+}  
+
+main li:nth-of-type(9){
+    grid-column: 1/span 2;
+}
+
+main li img {
+    width: 18.75rem;
+    height: 100%;
+    object-fit: cover;
+ } 
+ 
+.item-content {
+    padding:24px;
+    display: flex;
+    flex-direction:column;
+    justify-content:space-between;
+    background-color: rgb(201, 206, 216);
+    width:100%;
+    height:100%;
+}
+
+.item-conten h2{
+    margin: 0px;
+    
+}
+
+h2{
+    color: rgb(83, 69, 69);
+    font-weight:200;
+    font-size: 2rem;
+}
+
+p{
+    color: red;
+    font-size: 1.5rem;
+}
+.x{
+    color:green;
+} 
+
+.xx{
+    color:blue;
+}
+
+.g{
+    background-color: rgb(81, 105, 81);
+    width: 100%;
+    height: 100%;
+}
+.action{
+    text-align: right;
+}
+
+
+
+ .action a{
+    text-align: right;
+    text-decoration: none;
+    padding: 6px;
+    color: rgb(22, 211, 255);
+    border-radius: 6px;
+ }
+
+ @media(max-width:48rem){
+    main ul{
+        grid-template-columns: 1fr;
+        gap: 0.75rem;
+    }
+
+    
+ }
+
+ @media (max-width:75rem) {
+    main li{
+        flex-direction: column;
+    }
+    main li img{
+        width: 100%;
+    }
+    main li:nth-of-type(3){
+        grid-column: 1;
+    }
+    
+ }
+
+
+ .action a:hover{
+    background-color: rgb(235, 253, 255);
+ }
+
+   h2:hover{
+ background-color: gainsboro;
+ } 
+ 
+ p:hover{
+    background-color: rgb(165, 187, 206);
+ }
+
+ #page-loge a:hover{
+    background-color: rgb(128, 122, 122);
+ }
+ 
+footer {
+    background-color:gray;
+    padding: 2.46rem 0;
+    
+}
+
+footer ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    
+}
+
+footer li{
+    width:1.5rem;
+    height:1.5rem;
+    margin: 0 .125rem;
+}
+
+footer img{
+    width:2%;
+    height:2%;
+    float: left;
+    justify-content: space-between;
+    padding-left: 2px;
+    padding-right: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+} 
+
+
+.footer{
+    position:fixed;
+   left: 0;
+   bottom: 0;
+   right: 0;
+   width: -10%;
+   background-color:black;
+   color: white;
+   text-align:end;
+    font-size: 0.9rem;
+}
+
+   

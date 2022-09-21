@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="contact4.css">
+</head>
+<body>
+
+                <div class="contact4form">
+
+                    <div id="contact4">
+                    <h3 class="fcf-h3">Contact us</h3>
+
+                    <form id="contact4-id" class="contact4-class" method="post" action="contact-form-process.php">
+                        
+                        <div class="contact4-form-group">
+                            <label for="Name" class="fcf-label">Your name</label>
+                            <div class="contact4form-input-group">
+                                <input type="text" id="Name" name="Name" class="contact4-control" required>
+                            </div>
+                        </div>
+
+                        <div class="contact4-form-group">
+                            <label for="Email" class="fcf-label">Your email address</label>
+                            <div class="contact4form-input-group">
+                                <input type="email" id="Email" name="Email" class="contact4-control" required>
+                            </div>
+                        </div>
+
+                        <div class="contact4-form-group">
+                            <label for="Email" class="fcf-label">Your phone number</label>
+                            <div class="contact4form-input-group">
+                                <input type="email" id="Email" name="Email" class="contact4-control" required>
+                            </div>
+                        </div>
+
+                        <div class="contact4-form-group">
+                            <label for="Message" class="fcf-label">Your message</label>
+                            <div class="contact4form-input-group">
+                                <textarea id="Message" name="Message" class="contact4-control" rows="6" maxlength="3000" required></textarea>
+                            </div>
+                        </div>
+
+                        <div>
+                            <p class="contact4-prefered">Prefered method of contact</p>
+        
+                            <input class="contact4-radio" type="radio" name="contact" id="contactEmail" value="email">
+                            <Label for="contactEmail">Email</Label>
+        
+                            <input class="contact4-radio"type="radio" name="contact" id="contactTel" value="Phone">
+                            <label for="contactTell">Phone Call</label>
+        
+                            <input class="contact4-radio" type="radio" name="contact" id="contactTel" value="text">
+                            <label for="contactText">Text messages</label>
+                        </div>
+
+                        <div class="contact4-form-group">
+                            <button type="submit" id="contact-form-button" class="contact-form-btn contact-form-btn-primary contact-btn-lg contact-form-block">Send Message</button>
+                        </div>
+
+                    </form>
+                    </div>
+
+                </div>
+
+</body>
+</html>

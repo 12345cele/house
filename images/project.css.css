@@ -1,0 +1,57 @@
+/* body{
+    margin: 0;
+    font-family: "quicksand",sans-serif;
+ }
+body html{
+    height: 100%;
+    margin: 0; 
+}
+
+  .navbar{
+    background: linear-gradient(10deg,rgb(135, 135, 161),rgb(180, 180, 196));
+    border-radius: 15px;
+   
+}
+.navbar ul{
+    overflow: auto;
+}
+.navbar li{
+    float:left;
+    list-style: none; 
+    margin: 13px 20px;
+    
+}
+.navbar li a{
+    padding: 3px 3px;
+    text-decoration: none;
+    color: white;
+}
+.navbar li a:hover{
+    color: rgb(122, 102, 104);
+}
+.search a{
+    float: right;
+    color: white;
+    padding: 12px 75px;
+    text-decoration: none;
+}
+.navbar input{
+     border: 2px solid rgb(83, 44, 44); 
+    border-radius: 14px;
+    padding: 3px 17px;
+    width: 129px;
+}
+.search a:hover{
+    color: rgb(122, 104, 104);
+ }
+
+.hp{  
+height:100vh;
+background-image: url("images/8.jpg");
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+
+}
+
+ */
